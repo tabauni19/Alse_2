@@ -6,7 +6,7 @@ int main() {
     cout << "¿Cuántos números quieres ingresar? ";
     cin >> n;
 
-    int* arr = new int[n];  // Crear arreglo dinámico según el tamaño ingresado
+    int* arr = new int[n]; 
     int suma = 0;
 
     cout << "Ingresa " << n << " números:" << endl;
@@ -20,6 +20,6 @@ int main() {
 
     cout << "La suma de los elementos es: " << suma << endl;
 
-    delete[] arr;  // Liberar memoria dinámica
+    delete[] arr;  
     return 0;
 }
