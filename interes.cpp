@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>  // Para la función pow
+#include <cmath>  
 using namespace std;
 
 int main() {
@@ -14,10 +14,8 @@ int main() {
     cout << "Ingrese el tiempo en años: ";
     cin >> tiempo;
 
-    // Convertir tasa porcentual a decimal
     tasa = tasa / 100;
 
-    // Fórmula del interés compuesto: M = P * (1 + r)^t
     monto = principal * pow(1 + tasa, tiempo);
 
     cout << "El monto acumulado después de " << tiempo << " años es: " << monto << endl;
